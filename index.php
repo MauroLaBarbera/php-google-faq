@@ -30,17 +30,77 @@ $faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQs Google</title>
+    <!-- FONT AWESOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- G FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<h1>Google FAQ</h1>
+    <!-- HEADER -->
+<header>
+<div class="top-header">
 
+    <ul>
+        <li>
+            
+            <img src="./img/google-939112_640.png" alt="">
+            
+        </li>
+        <li>
+            <h2>Privacy e termini</h2>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+        </li>
+        <li>
+            <div class="user">
+                <i class="far fa-user"></i>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="bottom">
+
+    <ul>
+
+        <li>
+            Introduzione
+        </li>
+        <li>
+            Norme sulla privacy
+        </li>
+        <li>
+            Termini di servizio
+        </li>
+        <li>
+            Tecnologie
+        </li>
+        <li class="active">
+            Domande frequenti
+        </li>
+
+    </ul>
+
+</div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+<!-- Question -->
 <?php foreach ($faqs as $faq) { ?>
 <h2> <?php echo $faq['question'] ?> </h2>
-
+<!-- Answer -->
 <p> <?php echo $faq['answer'] ?> </p>
 <?php } ?>
+
+</main>
 
 </body>
 </html>
